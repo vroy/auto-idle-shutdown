@@ -1,0 +1,35 @@
+What does this do:
+
+You can configure this script to shut down your computer automatically after a specified amount of time that you haven't touched the mouse or keyboard. To make sure it does not shutdown when playing a movie or something similar where the keyboard and mouse does not move but you're in front of your computer, you can avoid the automatic shutdown by clicking cancel in the notification. You configure the time limits for the amount of time it idles before shutdown and how much time before the shutdown time should it display the notification in auto-shutdown.conf.
+
+Requirements:
+
+* Xscreensaver
+* Ruby 1.8.6 or higher (only tested with 1.8.6)
+* gcc
+* zenity
+
+Installation:
+
+* Download this project however you prefer: github download link or git clone.
+* Make sure that you have Xscreensaver installed: sudo apt-get install libxss-dev
+* Make sure that you have zenity installed: sudo apt-get install zenity
+* Compile idle.c: gcc -o idle idle.c -lXss
+* Setup your crontab. I ran crontab -e, and copied the two lines that are in CRONTAB. 
+* Copy the lines from CRONTAB into your crontab, I used crontab -e. Don't forget to change the paths to your folder. It's also very important to change the idle time limit before shutdown as well as the amount of time before shutdown that there should be a notification with option of cancelation.
+
+Tested:
+
+I haven't had a chance to test this in other environments, don't hesitate to provide feedback for other environments. Here's what it has been tested in:
+
+* My laptop:
+** 
+** 
+* My home server:
+** 
+** 
+
+Snippets from:
+* http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/ - Core functionality
+* http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/#comment-1142 - Improvements to the idle script to remove segfaults
+* http://ubuntuforums.org/showthread.php?t=1332101 - Helped me figure out how to run the idle script through crontab

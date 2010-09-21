@@ -1,0 +1,2 @@
+DISPLAY=:0
+* * * * * cd /path/to/auto-shutdown && ./autoshudown >> auto-shutdown.log 2>&1
