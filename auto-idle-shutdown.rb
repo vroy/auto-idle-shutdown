@@ -8,7 +8,7 @@ def debug(msg)
   puts msg if DEBUG
 end
 
-if !File.exists?("auto-shutdown.conf")
+if !File.exists?("auto-idle-shutdown.conf")
   puts "Missing configuration file."
   exit!(1)
 end
@@ -27,7 +27,7 @@ if @idle >= @shutdown
   debug "Shutting down."
 elsif @idle >= (@shutdown - @notification)
   debug "Alerting user that PC will shut down in approximately #{@notification}."
-  `zenity --warning --text="AUTO-SHUTDOWN: Your PC will shut down in approximately 10 minutes if you don't touch your mouse or keyboard."`
+  `zenity --warning --text="AUTO-IDLE-SHUTDOWN: Your PC will shut down in approximately 10 minutes if you don't touch your mouse or keyboard."`
 else
   debug "Do nothing."
 end

@@ -1,0 +1,4 @@
+bash: ./autoshudown: No such file or directory
+bash: ./autoshudown: No such file or directory
+Test
+ruby: No such file or directory -- auto-shutdown.rb (LoadError)

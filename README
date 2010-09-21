@@ -1,6 +1,6 @@
 What does this do:
 
-You can configure this script to shut down your computer automatically after a specified amount of time that you haven't touched the mouse or keyboard. To make sure it does not shutdown when playing a movie or something similar where the keyboard and mouse does not move but you're in front of your computer, you can avoid the automatic shutdown by clicking cancel in the notification. You configure the time limits for the amount of time it idles before shutdown and how much time before the shutdown time should it display the notification in auto-shutdown.conf.
+You can configure this script to shut down your computer automatically after a specified amount of time that you haven't touched the mouse or keyboard. To make sure it does not shutdown when playing a movie or something similar where the keyboard and mouse does not move but you're in front of your computer, you can avoid the automatic shutdown by clicking cancel in the notification. You configure the time limits for the amount of time it idles before shutdown and how much time before the shutdown time should it display the notification in auto-idle-shutdown.conf.
 
 Requirements:
 
