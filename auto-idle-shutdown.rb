@@ -12,7 +12,7 @@ if !File.exists?("auto-idle-shutdown.conf")
   puts "Missing configuration file."
   exit!(1)
 end
-config = YAML::load( File.open("auto-shutdown.conf") )
+config = YAML::load( File.open("auto-idle-shutdown.conf") )
 
 @shutdown = config["shutdown"].to_i # Already in minutes
 debug "Status: Shutdown after #{@shutdown} minutes"
