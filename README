@@ -15,8 +15,14 @@ Installation:
 * Make sure that you have Xscreensaver installed: sudo apt-get install libxss-dev
 * Make sure that you have zenity installed: sudo apt-get install zenity
 * Compile idle.c: gcc -o idle idle.c -lXss
-* Setup your crontab. I ran crontab -e, and copied the two lines that are in CRONTAB. 
-* Copy the lines from CRONTAB into your crontab, I used crontab -e. Don't forget to change the paths to your folder. It's also very important to change the idle time limit before shutdown as well as the amount of time before shutdown that there should be a notification with option of cancelation.
+
+Usage:
+
+Let me resume how the script works before you configure your crontab. I schedule the script to run every minute. It reads the amount of time since the last time the keyboard or mouse was touched using the small Xscreensaver C program called idle. Once it has the idle time, it compares it to the shutdown time to see if the time is elapsed and it's time to reboot. Of course if it is, it will send the shutdown signal for a clean shutdown. If it's not time to shutdown, it could be time to pop a notification to the user to remind him that his computer will reboot in approximately the speficied amount of time.
+
+To set it up in your crontab, add the following two lines using contab -e: <pre>DISPLAY=:0
+* * * * * cd /path/to/auto-idle-shutdown && ruby auto-idle-shutdown.rb >> auto-idle-shutdown.log 2>&1</pre>
+
 
 Tested:
 
