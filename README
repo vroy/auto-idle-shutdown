@@ -45,6 +45,6 @@ I haven't had a chance to test this in other environments than the 2 listed belo
 
 I used the following links to help me figure this out
 -----------------------------------------------------
-* (http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/) - Core functionality
-* http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/#comment-1142 - Improvements to the idle script to remove segfaults
-* http://ubuntuforums.org/showthread.php?t=1332101 - Helped me figure out how to run the idle script through crontab
+* [http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/](http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/) - Core functionality
+* [http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/#comment-1142](http://coderrr.wordpress.com/2008/04/20/getting-idle-time-in-unix/#comment-1142) - Improvements to the idle script to remove segfaults
+* [http://ubuntuforums.org/showthread.php?t=1332101](http://ubuntuforums.org/showthread.php?t=1332101) - Helped me figure out how to run the idle script through crontab
